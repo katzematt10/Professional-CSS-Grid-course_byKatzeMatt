@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            align-items: center;
+            background: lightyellow;
+        }
+        .TableTitles th:nth-child(1) {
+            background-color: salmon;
+        }
+        .TableTitles th:nth-child(2) {
+            background-color: aqua;
+        }
+        .TableTitles th:nth-child(3) {
+            background-color: lightgreen;
+        }
+        .TableTitles th:nth-child(4) {
+            background-color: violet;
+        }
+        .MyTable tr td:nth-child(1) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table class="MyTable">
+        <thead>
+            <tr class="TableTitles">
+                <th>Element</th>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </tbody> 
+        
+      </table>
+
+</body>
+</html>
