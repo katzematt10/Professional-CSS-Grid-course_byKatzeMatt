@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            display:grid;
+            place-items: center;
+        } */
+        .pokeball{
+            position: relative; /*bc is th parent*/
+            width: 150px;
+            height: 150px;
+            background: #ffffff;
+            border: 5px solid #000000;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        /*pseudo-elements*/
+        .pokeball::before{
+            content: "";
+            position: absolute; /*bc is the child*/
+            background: red;
+            width: 100%;
+            height: 50%;
+        }
+        .pokeball::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 50%;
+            background: white;
+            border-top: 5px  solid black;
+        }
+        .boton{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border:  4px solid black;
+            border-radius: 50%;
+            top: calc(40%);
+            left: calc(35%);
+            z-index: 10;
+            background: white;
+            box-shadow: 0 0 0 2px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pokeball">
+            <div class="boton"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
